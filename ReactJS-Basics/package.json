@@ -1,0 +1,26 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "Project to create list of contacts",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
+    "build-prod": "webpack -p && copy src/index.html dist/index.html"
+  },
+  "author": "Prasad",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
